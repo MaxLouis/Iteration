@@ -2,9 +2,12 @@
 #S&C Iteration task 1
 #16/10/14
 
-number = int(input("Enter a number:"))
+column = int(input("Enter the number of colums:"))
+row = int(input("Enter the number of rows"))
+originalColumn = column
 
-for repeat in range(1,number+1):
-    print("{0:> 3} ".format(repeat ** 2),end="")
-    if repeat % 5 == 0:
-        print("\n")
+for columns in range(1,column+1):
+    print("*",end="")
+    column -= 1
+    if column == 1:
+        column = originalColumn
