@@ -11,7 +11,7 @@ while loop == True:
     if (denary > 0 and denary < 256) != True:
         print("Please enter a value within the boundary.")
         time.sleep(1)
-        loop = True
+        loop = False
         break
 
     #Variables for each placeholder
