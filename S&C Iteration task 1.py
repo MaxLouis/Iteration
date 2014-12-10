@@ -1,13 +1,10 @@
 #Max Louis
 #S&C Iteration task 1
-#16/10/14
+#16/10/14 - 10/11/14 modification
 
-column = int(input("Enter the number of colums:"))
-row = int(input("Enter the number of rows"))
-originalColumn = column
+number = int(input("Enter a number:"))
 
-for columns in range(1,column+1):
-    print("*",end="")
-    column -= 1
-    if column == 1:
-        column = originalColumn
+for repeat in range(1,number+1):
+    print("{0:> 3} ".format(repeat ** 2),end="")
+    if repeat % 5 == 0:
+        print("\n")
